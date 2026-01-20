@@ -1,0 +1,44 @@
+while True:
+    # ... calculator code ...
+
+    num1 = float(input("First number: "))
+    op = input("Operator (+, -, *, /): ")
+    num2 = float(input("Second number: "))
+
+    if op == "+":
+        result = num1 + num2
+    elif op == "-":
+        result = num1 - num2
+    elif op == "*":
+        result = num1 * num2
+    elif op == "/":
+        if num2 == 0:
+            print("Error: Cannot divide by zero!")
+            result = None
+        else:
+          result = num1 / num2
+    else:
+        print("Invalid operator!")
+        result = None
+
+    if op == "/":
+        int_result = int(num1) // int(num2)
+        print(f"Integer division: {int(num1)} // {int(num2)} = {int_result}")
+    
+    if result is not None:
+        print(f"{num1} {op} {num2} = {result}")
+
+
+
+    again = input("Calculate again? (yes/no): ")
+    if again.lower() != "yes":
+        print("Thanks for using the calculator!")
+        break
+
+#Which exercise was hardest? Why?
+#This one. I had to copy paste all the code over again when I added the while loop to have the right syntax
+
+#Which concept surprised you? (Dynamic typing? Memory sizes?)
+#Memory of float, since it lower than normal integer, though it includes a decimal
+
+#Endring
