@@ -1,0 +1,9 @@
+tem = float(input("Write a temperature. "))
+temps = []
+
+while True:
+    temps.append(tem)
+    print("avarage temperature is: ", sum(temps) / len(temps))
+    tem  = float(input("Write another temperature: "))
+    
+    
